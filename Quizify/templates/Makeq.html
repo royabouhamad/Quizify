@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Quizify</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheet.css')}}">
+  <a href="{{url_for('index')}}">
+    <img src="{{url_for('static', filename='Quiz-Logo-1.png')}}" alt="Quiz" style="width:50px;height:50px;align:left;">
+  </a>
+  </head>
+  <body>
+    <script src="{{url_for('static', filename='Makeqjs.js')}}"></script>
+    <h1>Creation Page</h1>
+    <br>
+    <div align="center">
+    <form action="{{ url_for('create_quiz')}}" method="post">
+      <input type="text" placeholder="Enter a question" name="createq" required>
+      <br>
+      <input type="text" placeholder="A.Answer 1" name="A" required>
+      <br>
+      <input type="text" placeholder="B.Answer 2" name="B" required>
+      <br>
+      <input type="text" placeholder="C.Answer 3" name="C" required>
+      <br>
+      <input type="text" placeholder="D.Answer 4" name="D" required>
+      <br>
+      <div align="center">
+      <p>Select an answer: </p>
+      <input type="checkbox" name="answer" value="A" onclick="limit_checkbox('answer',this,2)" /> <label for="60833.148.761">A</label>
+
+      <input type="checkbox" name="answer" value="B" onclick="limit_checkbox('answer',this,2)" /> <label for="60833.148.762">B</label>
+
+      <input type="checkbox" name="answer" value="C" onclick="limit_checkbox('answer',this,2)" /> <label for="60833.148.922">C</label>
+
+      <input type="checkbox" name="answer" value="D" onclick="limit_checkbox('answer',this,2)" /> <label for="60833.148.923">D</label>
+      <br>
+      <input type="submit" value="Next Question" class="button">
+      <a href="{{url_for('codeWindow')}}" class="button">Generate Code</a>
+
+      </div>
+
+      </form>
+    </div>
+
+
+  </body>
+</html>

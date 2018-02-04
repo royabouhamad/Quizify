@@ -1,0 +1,1 @@
+from .Quizify import app

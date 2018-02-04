@@ -1,0 +1,2 @@
+graft Quizify/templates
+graft Quizify/static

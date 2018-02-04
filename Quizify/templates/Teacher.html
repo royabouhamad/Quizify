@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizify</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheet.css')}}">
+    <a href="{{ url_for('index')}}">
+      <img src="{{url_for('static', filename='Quiz-Logo-1.png')}}" alt="Quiz" style="width:50px;height:50px;align:left;">
+    </a>
+  </head>
+  <body>
+    <h1>Teacher Page</h1>
+    <p>Select an option: </p>
+    <br>
+    <center><a href="{{url_for('create_quiz')}}" class="button">Make Quiz</a></center>
+    <br>
+    <center><a href="Viewsc.html" class="button">View Scores</a></center>
+    <br>
+    <center><a href="Accessq.html" class="button">Access Previous Quizzes</a></center>
+  </body>
+</html>

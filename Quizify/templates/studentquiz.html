@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizify</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheet.css')}}">
+    <a href="{{ url_for('index')}}">
+      <img src="{{url_for('static', filename='Quiz-Logo-1.png')}}" alt="Quiz" style="width:50px;height:50px;align:left;">
+    </a>
+  </head>
+  <body>
+    <h1>Quiz</h1>
+    <div align="center">
+      <p id="que">"Question from database"</p>
+      <br>
+      <input type="submit" value="A" class="button">Choice</input>
+      <br>
+      <input type="submit" value="B" class="button">Choice</input>
+      <br>
+      <input type="submit" value="C" class="button">Choice</input>
+      <br>
+      <input type="submit" value="D" class="button">Choice</input>
+      <br>
+    </div>
+  </body>
+</html>
