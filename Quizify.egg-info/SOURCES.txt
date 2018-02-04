@@ -8,10 +8,11 @@ Quizify.egg-info/requires.txt
 Quizify.egg-info/top_level.txt
 Quizify/static/.DS_Store
 Quizify/static/Makeqjs.js
+Quizify/static/Quiz-Logo-1.png
 Quizify/static/stylesheet.css
 Quizify/templates/.DS_Store
 Quizify/templates/Home.html
 Quizify/templates/Makeq.html
-Quizify/templates/Quiz-Logo-1.png
 Quizify/templates/Teacher.html
 Quizify/templates/code.html
+Quizify/templates/studentquiz.html
